@@ -20,15 +20,18 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
 
 body {
+  background-image: url(https://media.istockphoto.com/photos/green-chalkboard-background-picture-id1150072676?k=20&m=1150072676&s=170667a&w=0&h=rXJox0Qx3Q16sxwyhXBTDczqb1NOeAs7rvh0Lhn_xrg=);
+  background-size: 100%;
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  min-width: 100vw;
   min-height: 100vh;
 }
 
@@ -48,9 +51,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -58,13 +63,26 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: white;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
+}
+
+.sentences {
+  font-family: 'Caveat Brush', cursive;
+  padding: 0;
+  list-style: none;
+  font-size: 3rem;
+}
+
+.chalk {
+  padding: 10px;
 }
